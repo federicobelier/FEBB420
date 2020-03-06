@@ -1,0 +1,20 @@
+.parrafosv{
+    color: green;
+}
+.parrafosb{
+    color: blue;
+}
+
+h1{
+    text-align: center;
+    line-height: 200%;
+    font-size: 40px;
+}
+a{ 
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    
+}

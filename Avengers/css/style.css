@@ -1,0 +1,248 @@
+#logomarvel {
+    width: 120px;
+}
+body {
+background-color: black;
+background-image: url();
+}
+
+#linkmenu {
+    color: currentColor;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+  }
+    
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+
+ p{
+     color: black;
+ }
+img{
+  max-width: 100%;
+  margin-top: 4px;
+  size: cover;
+}
+
+footer{
+  color: #ececec;
+  font-family: "spartan";
+  font-size: 10px;
+  text-align: center;
+  margin-top: 40px ;
+  display: block;
+  align-items: center;
+}
+
+/*Trailers*/
+iframe{
+  width: 150px;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  margin-left: 90px;
+}
+h1{
+  color: #ececec;
+  text-align: center;
+  font-family: "Spartan";
+  margin: 30px;
+  font-size: 40px;
+}
+
+li{
+    display: inline;
+}
+/*Personajes*/
+
+#Personajes{
+  width: 200px;
+  margin: 70px;
+}
+
+
+
+#Personajes{
+  display:inline-block;
+  transition: all 1.s ease;
+}
+#Personajes :hover{
+    transform: scale(1.2);
+}
+
+/*Avengers*/
+
+#AAA{
+  float: right;
+  width: 400px;
+  margin-bottom: 100px;
+}
+
+#Intro a{
+  color: rgb(133, 59, 143);
+  transition: transform .3s;
+  text-decoration: none;
+
+}
+#Intro a:hover{
+    color: darkred;
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+#Intro{
+  font-family: "spartan";
+  color: #ececec;
+  margin: 70px;
+  margin-left: 100px;
+  font-size: 14px;
+}
+
+#P1 {
+  margin: 40px;
+  margin-top: 0px;
+}
+#P2{
+  margin: 40px;
+}
+#P3{
+  margin: 40px;
+  margin-top: 30px;
+}
+
+/* Menu*/  
+  strong {
+      font-weight: 600;
+    }
+    
+    
+  header {
+      display: flex;
+      position: fixed;
+      width: 100%;
+      height: 70px;
+      background: #212121;
+      justify-content: center;
+      align-items: center;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      margin-bottom: 0%;
+  }
+
+    
+  #nav-container {
+      position: static;
+      height: 100vh;
+      width: 100%;
+  }
+  #nav-container .bg {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 70px);
+      visibility: hidden;
+      opacity: 0;
+      transition: .3s;
+      background: #000;
+    }
+  #nav-container:focus-within .bg {
+      visibility: visible;
+      opacity: .6;
+    }
+    #nav-container * {
+      visibility: visible;
+    }
+    
+  .button {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 1;
+      -webkit-appearance: none;
+      border: 0;
+      background: transparent;
+      border-radius: 0;
+      height: 70px;
+      width: 30px;
+      cursor: pointer;
+      pointer-events: auto;
+      margin-left: 25px;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+    .icon-bar {
+      display: inline-block;
+      width: 100%;
+      height: 3px;
+      background: #aaa;
+      transition: .3s;
+    }
+    .icon-bar + .icon-bar {
+      margin-top: 5px;
+    }
+    
+    #nav-container:focus-within .button {
+      pointer-events: none;
+    }
+    #nav-container:focus-within .icon-bar:nth-of-type(1) {
+      transform: translate3d(0,8px,0) rotate(45deg);
+    }
+    #nav-container:focus-within .icon-bar:nth-of-type(2) {
+      opacity: 0;
+    }
+    #nav-container:focus-within .icon-bar:nth-of-type(3) {
+      transform: translate3d(0,-8px,0) rotate(-45deg);
+    }
+    
+  #nav-content {
+      margin-top: 70px;
+      padding: 20px;
+      width: 90%;
+      max-width: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100% - 70px);
+      background: #ececec;
+      pointer-events: auto;
+      transform: translateX(-100%);
+      transition: transform .3s;
+      will-change: transform;
+      contain: paint;
+      font-family: "spartan";
+    }
+    
+    #nav-content ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #nav-content li a {
+      padding: 10px 5px;
+      display: block;
+      text-transform: uppercase;
+      transition: color .1s;
+    }
+    
+    #nav-content li a:hover {
+      color: rgb(133, 59, 143);
+    }
+    
+  #nav-content li:not(.small) + .small {
+      margin-top: auto;
+    }
+    
+  #nav-container:focus-within #nav-content {
+      transform: none;
+    }
+ 
+    
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
